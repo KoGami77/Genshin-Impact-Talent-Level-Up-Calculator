@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Talent Books Calculator</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1 class="Heading">Talent Level-up Materials Calculator</h1>
+        <section class="WHOLE">
+
+          <section class="Set_Info">
+            <h1>Talents Info</h2>
+            <hr>
+
+            <h2>Normal Attack</h2>
+            <div class="NA">
+              <div class="Talent_Info">
+                <div class="lvl">
+                  <h3>Current Level:</h3>
+                  <input type="number" id="curr_na" min="1" max="10" value="1" onblur="set_currentNA()">
+                </div>
+                <div class="lvl">
+                  <h3>Target Level:</h3>
+                  <input type="number" id="tar_na" min="1" max="10" value="1" onblur="set_targetNA()">
+                </div>
+              </div>
+            </div>
+
+            <h2>Elemental Skill</h2>
+            <div class="ES">
+              <div class="Talent_Info">
+                <div class="lvl">
+                  <h3>Current Level:</h3>
+                  <input type="number" id="curr_es" min="1" max="10" value="1" onblur="set_currentES()">
+                </div>
+                <div class="lvl">
+                  <h3>Target Level:</h3>
+                  <input type="number" id="tar_es" min="1" max="10" value="1" onblur="set_targetES()">
+                </div>
+              </div>
+            </div>
+
+            <h2>Elemental Burst</h2>
+            <div class="EB">
+              <div class="Talent_Info">
+                <div class="lvl">
+                  <h3>Current Level:</h3>
+                  <input type="number" id="curr_eb" min="1" max="10" value="1" onblur="set_currentEB()">
+                </div>
+                <div class="lvl">
+                  <h3>Target Level:</h3>
+                  <input type="number" id="tar_eb" min="1" max="10" value="1" onblur="set_targetEB()">
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <h2>Available Talent Books</h2>
+            <div class="available_books">
+              <img src="./images/gold_book.png">
+              <input type="number" id="curr_4" min="0" max="999" value="0" onblur="have_gold()">
+              <img src="./images/silver_book.png">
+              <input type="number" id="curr_3" min="0" max="999" value="0" onblur="have_silver()">
+              <img src="./images/bronze_book.png">
+              <input type="number" id="curr_2" min="0" max="999" value="0" onblur="have_bronze()">
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="calculate">
+              <input type="button" value="Calculate" onclick="Calculate()">
+            </div>
+            
+          </section>
+
+          <section class="Get_Results">
+            <h1>Materials Needed</h1>      
+            <hr>
+            <br>
+            <h2>Talent Books</h2>
+            <br>
+            <div class="books_needed">
+              <div class="gold">
+                <img src="./images/gold_book.png">
+                <h3 id="gold_needed">x?</h3>
+              </div>
+              <div class="silver">
+                <img src="./images/silver_book.png">
+                <h3 id="silver_needed">x?</h3>
+              </div>
+              <div class="bronze">
+                <img src="./images/bronze_book.png">
+                <h3 id="bronze_needed">x?</h3>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h2>Common Materials</h2>
+            <br>
+            <div class="common_materials">
+              <div class="comat_3">
+                <img src="./images/comats_3.png">
+                <h3 id="comat3_needed">x?</h3>
+              </div>
+              <div class="comat_2">
+                <img src="./images/comats_2.png">
+                <h3 id="comat2_needed">x?</h3>
+              </div>
+              <div class="comat_1">
+                <img src="./images/comats_1.png">
+                <h3 id="comat1_needed">x?</h3>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="weeklyNMora">
+              <div class="moraA">
+                <h2>Mora</h2>
+                <div class="mora_count">
+                  <img src="./images/mora.png">
+                  <h3 id="mora_needed">x?</h3>
+                </div>
+              </div>
+              <div class="vl"></div>
+              <div class="weekly">
+                <h2>Weekly Drops</h2>
+                <div class="week_loot">
+                  <img src="./images/weekly_mat.png">
+                  <h3 id="weekly_needed">x?</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="CROWN1">
+              <h2>Crown of Insight</h2>
+              <div class="crown">
+                <img src="./images/Crown_of_Insight.png">
+                <h3 id="insight">x?</h3>
+              </div>
+            </div>
+          </section>
+
+        </section>
+          
+    </body>
+</html>
+
