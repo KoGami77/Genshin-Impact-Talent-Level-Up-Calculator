@@ -263,21 +263,21 @@ input[type=button]:hover{
 .WHOLE{
 
 	display: block;
+	width: fit-content;
 	justify-content: space-around;
 	padding-left: 2vw;
 	padding-right: 2vw;
-	margin-left: 2vw;
-	margin-right: 2vw;
+	margin: auto;
 }
 
 .Heading{
 
-	font-size: 4vw;
+	font-size: 4.6vw;
 }
 
 .Set_Info h1{
 
-	font-size: 4vw;
+	font-size: 7vw;
 }
 
 .Set_Info h2{
@@ -287,7 +287,8 @@ input[type=button]:hover{
 
 .Set_Info h3{
 
-	font-size: 2.4vw;
+	font-size: 3.5vw;
+	margin-left: 4vw;
 }
 
 .Get_Results{
@@ -308,7 +309,8 @@ input[type=button]:hover{
 
 .Get_Results h3{
 
-	font-size: 2.4vw;
+	font-size: 3.5vw;
+	margin-left: 4vw;
 }
 
 input[type=number] {
@@ -318,7 +320,7 @@ input[type=number] {
 
 .calculate{
 
-	left: 35%;
+	left: 30%;
 }
 
 input[type=button]{
