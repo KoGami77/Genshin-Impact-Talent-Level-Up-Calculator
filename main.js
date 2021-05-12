@@ -39,6 +39,11 @@ function set_currentNA(){
         t1[0] = 10;
         selects.value = t1[0];
     }
+    else if(t2[0]<t1[0]){
+        alert("Target Level should be greater than Current Level");
+        t2[0] = t1[0];
+        document.getElementById("tar_na").value = t1[0];
+    }
     //document.getElementById("tar_na").value = t1[0];
 }
 
@@ -75,6 +80,11 @@ function set_currentES(){
         t1[1] = 10;
         selects.value = t1[1];
     }
+    else if(t2[1]<t1[1]){
+        alert("Target Level should be greater than Current Level");
+        t2[1] = t1[1];
+        document.getElementById("tar_es").value = t1[1];
+    }
     //document.getElementById("tar_es").value = t1[1];
 }
 
@@ -110,6 +120,11 @@ function set_currentEB(){
         alert("Talent Level should in between 1 and 10");
         t1[2] = 10;
         selects.value = t1[2];
+    }
+    else if(t2[2]<t1[2]){
+        alert("Target Level should be greater than Current Level");
+        t2[2] = t1[2];
+        document.getElementById("tar_eb").value = t1[2];
     }
     //document.getElementById("tar_eb").value = t1[2];
 }
