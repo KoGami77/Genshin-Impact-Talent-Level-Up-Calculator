@@ -39,7 +39,7 @@ function set_currentNA(){
         t1[0] = 10;
         selects.value = t1[0];
     }
-    document.getElementById("tar_na").value = t1[0];
+    //document.getElementById("tar_na").value = t1[0];
 }
 
 function set_targetNA(){
@@ -75,7 +75,7 @@ function set_currentES(){
         t1[1] = 10;
         selects.value = t1[1];
     }
-    document.getElementById("tar_es").value = t1[1];
+    //document.getElementById("tar_es").value = t1[1];
 }
 
 function set_targetES(){
@@ -111,7 +111,7 @@ function set_currentEB(){
         t1[2] = 10;
         selects.value = t1[2];
     }
-    document.getElementById("tar_eb").value = t1[2];
+    //document.getElementById("tar_eb").value = t1[2];
 }
 
 function set_targetEB(){
